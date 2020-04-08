@@ -10,10 +10,12 @@ const { loading, error, data} = useQuery(AUTHOR_QUERY)
   return (
     <form id="add-book">
         <div className="field">
-            <label>Book Nane</label>
+            <label>Book Name</label>
+            <input type="text"/>
         </div>
         <div className="field">
             <label>Genre</label>
+            <input type="text"/>
         </div>
         <div className="field">
             <label>Author</label>
