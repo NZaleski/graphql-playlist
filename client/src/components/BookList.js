@@ -9,7 +9,6 @@ const { loading, error, data} = useQuery(BOOK_QUERY)
   if (error) return `Error! ${error.message}`;
   return (
     <div>  
-        {console.log(this)}
         <ul id="book-list">
         {data.books.map(book => (
         <li key={book.id} value={book.name}>
